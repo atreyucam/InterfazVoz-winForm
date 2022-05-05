@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B15FAE72-6D75-47ED-8B14-FD979378C132}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>winapp_InterfazVoz_6767</RootNamespace>
+    <AssemblyName>winapp-InterfazVoz-6767</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\lineasFiguras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\lineasFiguras.Designer.cs">
+      <DependentUpon>lineasFiguras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\moverImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\moverImagen.Designer.cs">
+      <DependentUpon>moverImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\paisesCapitales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\paisesCapitales.Designer.cs">
+      <DependentUpon>paisesCapitales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\textoVoz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\textoVoz.Designer.cs">
+      <DependentUpon>textoVoz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\lineasFiguras.resx">
+      <DependentUpon>lineasFiguras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\moverImagen.resx">
+      <DependentUpon>moverImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\paisesCapitales.resx">
+      <DependentUpon>paisesCapitales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\textoVoz.resx">
+      <DependentUpon>textoVoz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\agua.png" />
+    <Content Include="assets\argentina.png" />
+    <Content Include="assets\bigote-en-zigzag.png" />
+    <Content Include="assets\bolivia.png" />
+    <Content Include="assets\boy.png" />
+    <Content Include="assets\brasil.png" />
+    <Content Include="assets\chile.png" />
+    <Content Include="assets\cohete.png" />
+    <Content Include="assets\colombia.png" />
+    <Content Include="assets\dbid0rg-a4930125-633e-49ea-bfb2-54972835e324.png" />
+    <Content Include="assets\diagonal-line.png" />
+    <Content Include="assets\ecuador.png" />
+    <Content Include="assets\elipseHorizontal.png" />
+    <Content Include="assets\elipseVertical.png" />
+    <Content Include="assets\espoch.png" />
+    <Content Include="assets\girl.png" />
+    <Content Include="assets\guayana.png" />
+    <Content Include="assets\heptagono.png" />
+    <Content Include="assets\hexagono.png" />
+    <Content Include="assets\line.png" />
+    <Content Include="assets\linea-curva.png" />
+    <Content Include="assets\microphone.png" />
+    <Content Include="assets\minus-horizontal-straight-line.png" />
+    <Content Include="assets\octagono.png" />
+    <Content Include="assets\paraguay.png" />
+    <Content Include="assets\pentagono.png" />
+    <Content Include="assets\peru.png" />
+    <Content Include="assets\planet-earth.png" />
+    <Content Include="assets\quebrada.png" />
+    <Content Include="assets\rectangulo.png" />
+    <Content Include="assets\run.png" />
+    <Content Include="assets\surinam.png" />
+    <Content Include="assets\triangulo.png" />
+    <Content Include="assets\uruguay.png" />
+    <Content Include="assets\venezuela.png" />
+    <Content Include="assets\viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
